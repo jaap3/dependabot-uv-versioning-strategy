@@ -1,0 +1,17 @@
+[project]
+name = "my-dependabot-test"
+version = "0"  # Required, not used for actual versioning
+description = "Test dependabot version updates."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sentry-sdk~=2.66.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff~=0.15.1",
+]
+
+[tool.uv]
+package = false
